@@ -3,11 +3,13 @@
     <div class="md-layout-item md-size-40">
       <h1>To-do List</h1>
       <md-content>
-        <ul>
-          <li v-for="(todo, index) in todos" :key="index">
-            {{ todo.description }}
-          </li>
-        </ul>
+        <md-field>
+          <ul>
+            <li v-for="(todo, index) in todos" :key="index">
+              {{ todo.description }}
+            </li>
+          </ul>
+        </md-field>
       </md-content>
     </div>
   </div>
